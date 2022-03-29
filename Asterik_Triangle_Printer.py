@@ -1,5 +1,10 @@
+# Programmed by: Mubashir Ahmed OR known as Mubashir78 on GitHub
+# https://www.github.com/Mubashir78
+
+import msvcrt
+
 def print_tri():
-    print("Hello. This script prints out a triangle based on asterik symbol multiplied times your number./n")
+    print("Hello. This script prints out a triangle based on asterik symbol multiplied times your number.\n")
     print("Please type a number below to print out a triangle. Remember to not enter a number too large, otherwise the triangle might not fit your screen and may look unusal.")
     while True:
         num = input("\nEnter a number: ")
@@ -14,10 +19,15 @@ def print_tri():
             while count != num + 1:
                 print("*" * count)
                 count += 1
-            exit()
+            print("Type any key to exit:")
+            msvcrt.getch()
+            break
 
         except ValueError:
             print("Invalid input. Please try again.")
             print_tri()
 
 print_tri()
+
+# Programmed by: Mubashir Ahmed OR known as Mubashir78 on GitHub
+# https://www.github.com/Mubashir78
